@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: url(https://images.unsplash.com/photo-1457449482263-1caf240046cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+
+}
+
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 961px) {
+    .header {
+        height: 450px;
+    }
+}
