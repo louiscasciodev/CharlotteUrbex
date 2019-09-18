@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: url(http://www.aulne-photoclub.fr/wp-content/uploads/2018/05/APC-Sortie-Urbex-Landevennec-Eric-PFISTER-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+
+    
+
+}
+
+.home {
+
+    height: 64px;
+    width: 64px;
+    background-image: url("images/home2.png");
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.home a {
+    height: 64px;
+    width: 64px;
+    display: flex;
+}
+
+.portfoliotitle {
+    font-size : 70px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin: auto;
+    text-shadow: white 1px 1px,white -1px 1px,white -1px -1px, white 1px -1px;
+}
+
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 961px) {
+    .header {
+        height: 450px;
+    }
+
+    .portfoliotitle {
+        font-size : 100px;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        margin: auto;
+    }
+    
+
+}
