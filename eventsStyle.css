@@ -66,23 +66,64 @@ body{
 
 
 
-nav{
-    width: 100%;
-    height: 6em;
-    background-color: #f5f5f5 ;
-    text-align: center;
-    font-size: 1.25em;
+/*Test Body*/
+body, html {
+    margin: 0 ;
+    width: 100% ;
+    background-color: rgba(92, 80, 80, 0.719) ;
 }
 
-nav ul{ 
+
+/*La div principale*/
+.sandwich {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+/*Section Unite*/
+.unite {
+    height: 160px ;
+    width: 160px ;
+    border-radius: 100%;
+    text-align: center ;
+    border: 2px solid transparent ;
+    background-color: rgb(50, 141, 8) ;
+  
 }
 
-nav ul li{
-    list-style-type: none;
-    padding: 10px;
+.unite a {
+    text-decoration: none ;
+    color: black ;
+}
+
+.unite img {
+    height: 40px ;
+    width: auto ;
+}
+/*Fin de la section unite, le sandwich est mangeable*/
+
+/*Media Try vitef */
+@media screen and (min-width: 961px) {
+    .bouton:hover {
+        cursor: pointer;
+        animation: hoverButton 3s infinite ;
+    }
+    .unite:hover {
+        cursor: pointer;
+        animation: hoverButton 3s infinite ;
+        background-color: rgb(15, 30, 167) ;
+    }
+}
+
+/* Animations */
+@keyframes hoverButton {
+    25% {
+        border: 2px solid rgb(172, 40, 40) ;
+    }
+    75% {
+        border: 2px solid transparent ;
+    }
+}padding: 10px;
 }
 
 section{
