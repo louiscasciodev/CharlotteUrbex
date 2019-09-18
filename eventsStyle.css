@@ -43,3 +43,33 @@ nav.round_menu {
     margin: 20px auto;
 }
 
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 94%;
+    height: 100%;
+    border:solid;
+}
+
+.texte{
+    display:block;
+    width:50%;
+    border:solid;
+}
+
+.BasDePage{
+    display:block;
+    margin: auto;
+    width:94%;
+    border:solid;
+}
+
+.liste{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style:none;
+}
+
+
