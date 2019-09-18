@@ -18,8 +18,28 @@ header h1 {
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 nav.round_menu {
+    margin: 2% 0%;
     display: flex ;
     flex-flow: row wrap ;
-    justify-content: space-around ;
-    margin: 2% 0% ;
+    justify-content: space-around;
 }
+
+.option{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border:none;
+}
+
+.option a{
+    text-decoration:none;
+}
+
+.trait{
+    background-color:black;
+    width: 30%;
+    height: 1px;
+    margin: 20px auto;
+}
+
