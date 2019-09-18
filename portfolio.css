@@ -6,11 +6,39 @@
 
 .header {
     background: url(https://images.unsplash.com/photo-1457449482263-1caf240046cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 250px;
+    display: flex;
+    justify-content: center;
 
+    
+
+}
+
+.home {
+
+    height: 64px;
+    width: 64px;
+    background-image: url("images/home2.png");
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.home a {
+    height: 64px;
+    width: 64px;
+    display: flex;
+}
+
+.portfoliotitle {
+    font-size : 70px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin: auto;
+    text-shadow: white 1px 1px,white -1px 1px,white -1px -1px, white 1px -1px;
 }
 
 
@@ -20,4 +48,13 @@
     .header {
         height: 450px;
     }
+
+    .portfoliotitle {
+        font-size : 100px;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        margin: auto;
+    }
+    
+
 }
