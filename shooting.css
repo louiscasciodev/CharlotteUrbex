@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://live.staticflickr.com/3765/12051156634_2d2e5a4768_b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 35%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+
+    
+
+}
+
+.home {
+
+    height: 64px;
+    width: 64px;
+    background-image: url("images/home2.png");
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.home a {
+    height: 64px;
+    width: 64px;
+    display: flex;
+    
+}
+
+.portfoliotitle {
+    font-size : 40px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin: auto;
+    text-shadow: white 1px 1px,white -1px 1px,white -1px -1px, white 1px -1px;
+}
+
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 961px) {
+    .header {
+        height: 450px;
+    }
+
+    .portfoliotitle {
+        font-size : 120px;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        margin: auto;
+    }
+    
+
+}
