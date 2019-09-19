@@ -1,3 +1,131 @@
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(http://www.aulne-photoclub.fr/wp-content/uploads/2018/05/APC-Sortie-Urbex-Landevennec-Eric-PFISTER-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+
+    
+
+}
+
+.home {
+
+    height: 64px;
+    width: 64px;
+    background-image: url("images/home2.png");
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.home a {
+    height: 64px;
+    width: 64px;
+    display: flex;
+}
+
+.portfoliotitle {
+    font-size : 45px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin: auto;
+    text-shadow: white 1px 1px,white -1px 1px,white -1px -1px, white 1px -1px;
+}
+
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 961px) {
+    .header {
+        height: 450px;
+    }
+
+    .portfoliotitle {
+        font-size : 100px;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        margin: auto;
+    }
+}
+
+body,html {
+    margin: 0 ;
+    padding: 0 ;
+}
+
+
+nav.round_menu {
+    margin: 2% 0%;
+    display: flex ;
+    flex-flow: row wrap ;
+    justify-content: space-around;
+}
+
+.option{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border:none;
+    transition-duration: 0.5s ;
+    border: 4px solid black ;
+}
+
+.option a{
+    text-decoration:none;
+    color: black ;
+    font-size: 120% ;
+}
+
+/* Sections */
+
+.trait{
+    background-color:black;
+    width: 30%;
+    height: 1px;
+    margin: 20px auto;
+}
+
+.EventContainer{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 94%;
+}
+
+.EventTexte{
+    display:block;
+    width:50%;
+    background-color: rgb(26, 184, 26) ;
+}
+
+.EventTexte p {
+    margin: 5% ;
+    font-size: 110% ;
+}
+
+.BasDePage{
+    display:block;
+    margin: auto;
+    width:94%;
+}
+
+.liste{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style:none;
+    text-align: center;
+}
+
+.list li{
+    text-align: center;
+}
+
+
 
 footer{
     height: 32px;
@@ -32,3 +160,28 @@ footer ul li a{
 .facebook{background-image: url("images/facebook.png");}
 .behance{background-image: url("images/behance.png");}
 .contact{width: auto;}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Animations */
+@keyframes hoverButton {
+    25% {
+        background-color: 4px solid rgb(0, 255, 21) ;
+    }
+    75% {
+        background-color: 4px solid white;
+    }
+}
+
+/* Media Queries */
+@media screen and (min-width: 961px) {
+    .option:hover {
+        cursor: pointer;
+        animation: hoverButton 2s infinite ;
+        background-color: rgb(26, 184, 26) ;
+    }
+}
