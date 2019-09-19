@@ -19,6 +19,36 @@
     
 
 }
+/* Menu */
+nav.round_menu {
+    margin: 2% 0%;
+    display: flex ;
+    flex-flow: row wrap ;
+    justify-content: space-around;
+}
+
+.option{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border:none;
+    transition-duration: 0.5s ;
+    border: 4px solid black ;
+}
+
+.option a{
+    text-decoration:none;
+    color: black ;
+    font-size: 120% ;
+}
+.trait{
+    background-color:black;
+    width: 30%;
+    height: 1px;
+    margin: 20px auto;
+}
+/* Fin Menu */
 
 .home {
 
