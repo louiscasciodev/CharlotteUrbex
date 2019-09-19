@@ -40,6 +40,8 @@ nav.round_menu {
     font-size: 120% ;
 }
 
+/* Sections */
+
 .trait{
     background-color:black;
     width: 30%;
@@ -47,26 +49,28 @@ nav.round_menu {
     margin: 20px auto;
 }
 
-.container{
+.EventContainer{
     display: flex;
     flex-flow: row wrap;
     margin: auto;
     width: 94%;
-    height: 100%;
-    border:solid;
 }
 
-.texte{
+.EventTexte{
     display:block;
     width:50%;
-    border:solid;
+    background-color: rgb(26, 184, 26) ;
+}
+
+.EventTexte p {
+    margin: 5% ;
+    font-size: 110% ;
 }
 
 .BasDePage{
     display:block;
     margin: auto;
     width:94%;
-    border:solid;
 }
 
 .liste{
