@@ -1,38 +1,29 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {margin: 0; padding: 0; overflow-x: hidden;}
+::-webkit-scrollbar {display: none;}
 
 body{
     font-family: 'Quicksand', sans-serif;
     color: #525252;
     font-size: 1em;
 }
-
-header{
-    position: flex;
-    
-}
-
 #myVideo {
     min-width: 100%;
-    min-height: 400px;
+    max-height: 100%;
+
 }
 
 #charlotte {
     position: absolute;
-    top: 170px; left:16%;
-    font-size: 3em;
+    top: 150px; left:18%;
+    font-size: 2.2em;
     font-weight: bold;
     color: #f5f5f5;
 }
-
 #follow {
     position: absolute;
-    top: 130px; left:6%;
-    font-size: 1.7em;
+    top: 125px; left:10%;
+    font-size: 1.2em;
     font-weight: bold;
     color: #f5f5f5;
 }
@@ -40,25 +31,26 @@ header{
 
 nav{
     width: 100%;
-    height: 100px;
     background-color: #f5f5f5 ;
     text-align: center;
 }
 
 .intro{
-    font-size: 1em;
-    padding: 20 10% 20 10%;
+    font-size: 0.8em;
+    padding: 30 10% 30 10%;
+}
+
+section .categories{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .categories{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 2em;
+    font-size: 2.4em;
 }
 
     article{
         display: flex;
-        background-color: #f5f5f5;
         min-width: 50%;
         height: 200px;
     }
@@ -69,72 +61,174 @@ nav{
         justify-content: center;
         width: 100%;
         height: 100%;
-        color: #e6e6e6;
+        color: #f5f5f5;
         font-weight: bold;
         text-decoration: none;
     }
     article a:hover{
+        color: #f5f5f5;
     }
 
-    .portfolio{background-image: url("https://image.shutterstock.com/z/stock-photo-staircase-abandoned-villa-germany-1173815266.jpg");}
-    .shooting{background-image: url("https://image.shutterstock.com/image-photo/homeless-wild-dog-old-radioactive-600w-1339546295.jpg");}
-    .event{background-image: url("https://image.shutterstock.com/image-photo/urbex-old-castle-france-600w-1138765394.jpg");}
-    .aboutme{background-image: url("https://image.shutterstock.com/image-photo/japanese-abandonned-village-forgotten-mah-600w-1257009307.jpg");}
+    .portfolio{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/portfolio.jpg");
+    background-position: center;
+    background-size: cover;}
+    .shooting{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/shooting.jpg");
+    background-position: center;
+    background-size: cover;}
+    .events{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/events.jpg");
+    background-position: center;
+    background-size: cover;}
+    .aboutme{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/aboutme.jpg");
+    background-position: center;
+    background-size: cover;}
+
+
+    .portfolio a:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/portfolio.jpg");
+    background-position: center;
+    background-size: cover;}
+    .shooting a:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/shooting.jpg");
+    background-position: center;
+    background-size: cover;}
+    .events a:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/events.jpg");
+    background-position: center;
+    background-size: cover;}
+    .aboutme a:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/aboutme.jpg");
+    background-position: center;
+    background-size: cover;}
+    
+
 
 footer{
-    margin-top: 40px;
-    height: 50px;
+    height: 32px;
+    padding: 8 0 8 0;
 }
 
 footer ul{
     display: flex;
     justify-content: center;
     align-items: stretch;
+    margin: 0 0 0 0;
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/noise-bg.png) repeat 0 0;
 }
 
 footer ul li{
     list-style-type: none;
+    margin-right: 8%;
 }
 
 footer ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
     color: #525252;
     text-decoration: none;
 }
 
-.twitter{background-image: url("")};
-.instagram{background-image: url("")}
-.facebook{background-image: url("")}
-.behance{background-image: url("")}
+.twitter{background-image: url("images/twitter.png");}
+.instagram{background-image: url("images/instagram.png");}
+.facebook{background-image: url("images/facebook.png");}
+.behance{background-image: url("images/behance.png");}
+.contact{width: auto;}
 
 
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
+/* Smartphone style*/
+
+@media only screen and (max-width: 450px) {
 
     #charlotte {
         position: absolute;
-        top: 300px; left:30%;
-        font-size: 4em;
+        top: 150px; left:18%;
+        font-size: 2.2em;
     }
+    #follow {
+        position: absolute;
+        top: 125px; left:10%;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #f5f5f5;
+    } 
+
+}
+
+@media only screen and (min-width: 600px) {
+
     .categories{
         display: flex;
         flex-wrap: wrap;
-        font-size: 2.5em;
+    } 
+}
+
+
+
+/* Desktop Style */
+@media only screen and (min-width: 961px) and (max-width: 1500px){
+
+    body{
+        margin-bottom: -250px;
     }
+    #charlotte {
+        position: absolute;
+        top: 180px; left:30%;
+        font-size: 3.4em;
+    }
+    #follow {
+        position: absolute;
+        top: 130px; left:14%;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #f5f5f5;
+    }
+
     .intro{
-        font-size: 1.3em;
-        padding: 20 10% 20 10%;
+        font-size: 1.2em;
+        padding: 20 26% 20 26%;
+    }
+    content{
+        position: relative;
+        top: -250px;
+    }  
+}
+
+/* Large Screen Styles */
+@media only screen and (min-width: 2000px) {
+
+    body{
+        margin-bottom: -400px;
+    }
+
+    #charlotte {
+        position: absolute;
+        top: 350px; left:30%;
+        font-size: 4em;
     }
     #follow {
         position: absolute;
         top: 240px; left:14%;
-        font-size: 2em;
+        font-size: 3em;
         font-weight: bold;
         color: #f5f5f5;
-    }    
+    }
+
+    .intro{
+        font-size: 1.2em;
+        padding: 20 26% 20 26%;
+    }
+    .categories{
+        font-size: 3em;
+    }
+
+    content{
+        position: relative;
+        top: -400px;
+    }
 }
