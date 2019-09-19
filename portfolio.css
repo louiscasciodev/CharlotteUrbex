@@ -1,3 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3vw 0%;
+}
+
+#gallery article {
+    background-color: black;
+    height: 300px;
+    width: 350px;
+    margin: 2px;
+}
+
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1457449482263-1caf240046cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+
+    
+
+}
+
+.home {
+
+    height: 64px;
+    width: 64px;
+    background-image: url("images/home2.png");
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.home a {
+    height: 64px;
+    width: 64px;
+    display: flex;
+}
+
+.portfoliotitle {
+    font-size : 45px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin: auto;
+    text-shadow: white 1px 1px,white -1px 1px,white -1px -1px, white 1px -1px;
+}
+
 
 footer{
     height: 32px;
@@ -32,3 +95,21 @@ footer ul li a{
 .facebook{background-image: url("images/facebook.png");}
 .behance{background-image: url("images/behance.png");}
 .contact{width: auto;}
+
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 961px) {
+    .header {
+        height: 450px;
+    }
+
+    .portfoliotitle {
+        font-size : 100px;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        margin: auto;
+    }
+    
+
+}
