@@ -28,12 +28,16 @@ nav.round_menu {
     border-radius: 50px;
     width: 100px;
     height: 100px;
-    background-color: green;
+    background-color: white;
     border:none;
+    transition-duration: 0.5s ;
+    border: 4px solid black ;
 }
 
 .option a{
     text-decoration:none;
+    color: black ;
+    font-size: 120% ;
 }
 
 .trait{
@@ -77,4 +81,21 @@ nav.round_menu {
     text-align: center;
 }
 
+/* Animations */
+@keyframes hoverButton {
+    25% {
+        background-color: 4px solid rgb(0, 255, 21) ;
+    }
+    75% {
+        background-color: 4px solid white;
+    }
+}
 
+/* Media Queries */
+@media screen and (min-width: 961px) {
+    .option:hover {
+        cursor: pointer;
+        animation: hoverButton 2s infinite ;
+        background-color: rgb(26, 184, 26) ;
+    }
+}
