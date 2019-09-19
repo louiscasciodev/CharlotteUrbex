@@ -86,37 +86,64 @@ section .categories{
     .portfolio{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/portfolio.jpg");
     background-position: center;
-    background-size: cover;}
+    background-size: cover;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;}
     .shooting{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/shooting.jpg");
     background-position: center;
-    background-size: cover;}
+    background-size: cover;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;}
     .events{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/events.jpg");
     background-position: center;
-    background-size: cover;}
+    background-size: cover;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;}
     .aboutme{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/aboutme.jpg");
     background-position: center;
-    background-size: cover;}
+    background-size: cover;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;}
 
 
     .portfolio a:hover{
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/portfolio.jpg");
     background-position: center;
-    background-size: cover;}
+    background-size: cover;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;}
     .shooting a:hover{
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/shooting.jpg");
     background-position: center;
-    background-size: cover;}
+    background-size: cover;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;}
     .events a:hover{
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/events.jpg");
     background-position: center;
-    background-size: cover;}
+    background-size: cover;        
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;}
     .aboutme a:hover{
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/aboutme.jpg");
     background-position: center;
-    background-size: cover;}
+    background-size: cover;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;}
     
 /*-------------------Footer social networks-------------------*/
 
