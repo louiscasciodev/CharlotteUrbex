@@ -1,10 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
     transition-property: all;
     transition-duration: .6s;
     transition-timing-function: ease;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    color: #525252;
+    font-size: 1em;
 }
 
 .header {
@@ -19,7 +24,7 @@
     
 
 }
-/* Menu */
+
 nav.round_menu {
     margin: 2% 0%;
     display: flex ;
@@ -42,13 +47,6 @@ nav.round_menu {
     color: black ;
     font-size: 120% ;
 }
-.trait{
-    background-color:black;
-    width: 30%;
-    height: 1px;
-    margin: 20px auto;
-}
-/* Fin Menu */
 
 .home {
 

@@ -4,8 +4,10 @@
     box-sizing: border-box;
   }
 
-body{
+  body{
     font-family: 'Quicksand', sans-serif;
+    color: #525252;
+    font-size: 1em;
 }
 
 /* Menu */
@@ -49,7 +51,9 @@ nav.round_menu {
 }
 
 #gallery article {
-    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 300px;
     width: 350px;
     margin: 2px;
@@ -144,4 +148,56 @@ footer ul li a{
     }
     
 
+}
+
+/*Section Photo */
+
+#photo1{
+    background-image:url("https://images.unsplash.com/photo-1533719712446-75425696df9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    
+}
+
+#photo2{
+    background-image:url("https://images.unsplash.com/photo-1562605021-a3043150d280?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    
+}
+
+#photo3{
+    background-image:url("https://images.unsplash.com/photo-1522309980541-7df2b74f5bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1262&q=80");
+  
+}
+
+#photo4{
+    background-image:url("https://images.unsplash.com/photo-1518565756759-98c6cbc5fa33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1457&q=80");
+   
+}
+
+#photo5{
+    background-image:url("https://images.unsplash.com/photo-1494517378030-4c40fe233e3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    
+}
+
+#photo6{
+    background-image:url("https://urbexsession.com/wp-content/uploads/2013/10/sanatorium-nestor-pirotte-44-1024x683.jpg");
+   
+}
+
+#photo7{
+    background-image:url("https://ichef.bbci.co.uk/wwfeatures/wm/live/624_351/images/live/p0/49/lr/p049lrff.jpg");
+  
+}
+
+#photo8{
+    background-image:url("https://images.unsplash.com/photo-1453989799106-bbad8d7b5191?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+   
+}
+
+#photo9{
+    background-image:url("https://expatliving.hk/wp-content/uploads/2014/04/HK-URBEX-4.jpg");
+  
+}
+
+#photo10{
+    background-image:url("http://www.jacquier-photo.fr/wp-content/uploads/2017/06/photographe-portrait-exterieur-nancy-danseuse-sakiko-oishi.jpg");
+    
 }
