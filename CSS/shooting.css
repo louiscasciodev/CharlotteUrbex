@@ -1,17 +1,20 @@
+@import "bourbon";
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
+    box-sizing: inherit;
     transition-property: all;
     transition-duration: .6s;
     transition-timing-function: ease;
-}
-
-body{
     font-family: 'Quicksand', sans-serif;
-    color: #525252;
-    font-size: 1em;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+    -moz-transition-property: all;
+    -moz-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
 }
-
+/* Menu */
 .header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://live.staticflickr.com/3765/12051156634_2d2e5a4768_b.jpg') fixed;
     background-repeat: no-repeat;
@@ -20,20 +23,15 @@ body{
     height: 250px;
     display: flex;
     justify-content: center;
-
-    
-
-}
-
-/* Menu */
-nav.round_menu {
+ }
+ /* Menu */
+ nav.round_menu {
     margin: 4% 0%;
     display: flex ;
     flex-flow: row wrap ;
     justify-content: space-around;
-}
-
-.option{
+ }
+ .option{
     border-radius: 50px;
     width: 100px;
     height: 100px;
@@ -42,61 +40,49 @@ nav.round_menu {
     transition-duration: 0.5s ;
     border: 2px solid rgb(63, 63, 63) ;
     cursor: pointer;
-}
-
-
-.option:hover a {
+ }
+ .option:hover a {
     color: white ;
-}
-
-.option a{
+ }
+ .option a{
     text-decoration:none;
     color: rgb(63, 63, 63) ;
     font-size: 120% ;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold ;
-}
-
-/* Hover part */
-#portfolioImg:hover {
+ }
+ /* Hover part */
+ #portfolioImg:hover {
     background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/portfolio.jpg") no-repeat 50% 50% ;
-}
-
-#aboutMeImg:hover {
+ }
+ #aboutMeImg:hover {
     background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/aboutme.jpg") no-repeat 50% 50% ;
-}
-
-#eventsImg:hover {
+ }
+ #eventsImg:hover {
     background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/events.jpg") no-repeat 50% 50% ;
-}
-/* Hover part - end */
-
-.trait{
+ }
+ /* Hover part - end */
+ .trait{
     background-color:black;
     width: 40%;
     height: 1px;
     margin: 20px auto;
-}
-
+ }
 /* Fin Menu */
-
 .home {
-
     height: 64px;
     width: 64px;
-    background-image: url("../images/home2.png");
+    background-image: url("images/home2.png");
     position: absolute;
     top: 2%;
     left: 2%;
 }
-
 .home a {
     height: 64px;
     width: 64px;
     display: flex;
     
 }
-
 .portfoliotitle {
     font-size : 40px;
     font-family: 'Quicksand', sans-serif;
@@ -104,78 +90,83 @@ nav.round_menu {
     margin: auto;
     text-shadow: white 1px 1px,white -1px 1px,white -1px -1px, white 1px -1px;
 }
-
 .buttons {
-    display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
     justify-content: center;
     text-align: center;
-    width: 100%;
+    text-decoration: none;
+    padding: 5%;
 }
-
-
+#mdr{
+    padding: 5%;
+}
+p{
+    padding: 15%;
+}
+.container{
+    text-align: justify;
+}
 .titre { 
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1em;
+    padding: 5%;
     text-align: center;
 }
-
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
+.container ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.container li{
+    display: table-cell;
+}
+.btn {
+    position: relative;
+    display: block;
+    width: 166px;
+    height: 45px;
+    font-size: 12px;
+    line-height: 45px;
     text-align: center;
-    width: 100%;
-}
-
-
-.btn-2 {
-    letter-spacing: 0;
-}
-
-.btn-2:hover,
-.btn-2:active {
-  letter-spacing: 5px;
-}
-
-.btn-2:after,
-.btn-2:before {
-  backface-visibility: hidden;
-  border: 1px solid rgba(#fff, 0);
-  bottom: 0px;
-  content: " ";
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  transition: all 280ms ease-in-out;
-  width: 0;
-}
-
-.btn-2:hover:after,
-.btn-2:hover:before {
-  backface-visibility: hidden;
-  border-color: #fff;
-  transition: width 350ms ease-in-out;
-  width: 70%;
-}
-
-.btn-2:hover:before {
-  bottom: auto;
-  top: 0;
-  width: 70%;
-}
-
-
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none ;
+  }
+  .btn svg {
+    position: absolute;
+    top: 0; left: 0;
+  }
+  .btn svg rect {
+    fill: none;
+    stroke: black;
+    stroke-width: 1;
+    stroke-dasharray: 422, 0;
+    transition: all 500ms ease-out;
+  }
+  .btn:hover svg rect {
+    stroke-width: 5;
+    stroke-dasharray: 10, 310;
+    stroke-dashoffset: 33;
+  }
+  .btn:hover {
+    color:black;
+    font-size:18px;
+    letter-spacing:1px;
+    font-weight:bold;
+  }
 footer{
     height: 32px;
-    padding: 8 0 8 0;
+    padding: 10 0 10 0;
 }
-
 footer ul{
     display: flex;
     justify-content: center;
@@ -183,12 +174,10 @@ footer ul{
     margin: 0 0 0 0;
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/noise-bg.png) repeat 0 0;
 }
-
 footer ul li{
     list-style-type: none;
     margin-right: 8%;
 }
-
 footer ul li a{
     display: flex;
     align-items: center;
@@ -198,20 +187,16 @@ footer ul li a{
     color: #525252;
     text-decoration: none;
 }
-
 .twitter{background-image: url("../images/twitter.png");}
 .instagram{background-image: url("../images/instagram.png");}
 .facebook{background-image: url("../images/facebook.png");}
 .behance{background-image: url("../images/behance.png");}
 .contact{width: auto;}
-
 /* Desktop Styles */
-
 @media only screen and (min-width: 961px) {
     .header {
         height: 450px;
     }
-
     .portfoliotitle {
         font-size : 120px;
         font-family: 'Quicksand', sans-serif;
@@ -219,5 +204,4 @@ footer ul li a{
         margin: auto;
     }
     
-
 }
