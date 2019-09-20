@@ -13,7 +13,7 @@ body{
 }
 
 .header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://live.staticflickr.com/3765/12051156634_2d2e5a4768_b.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://live.staticflickr.com/3765/12051156634_2d2e5a4768_b.jpg') fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 35%;
