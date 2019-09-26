@@ -213,7 +213,7 @@ footer ul li a{
 
 
 /* Desktop Style */
-@media only screen and (min-width: 961px) and (max-width: 1500px){
+@media only screen and (min-width: 961px) and (max-width: 1800px){
 
     body{
         margin-bottom: -250px;
@@ -242,7 +242,7 @@ footer ul li a{
 }
 
 /* Large Screen Styles */
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1800px) {
 
     body{
         margin-bottom: -400px;
