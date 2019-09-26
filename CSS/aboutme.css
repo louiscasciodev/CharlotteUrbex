@@ -1,7 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/*-------------------CSS reset & Formatage-------------------*/
+
+
+* {margin: 0; padding: 0; overflow-x: hidden;}
+::-webkit-scrollbar {display: none;}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #525252;
+    font-size: 1em;
 }
 
 body {
@@ -98,7 +105,7 @@ nav.round_menu {
     background-color: black;
     width: 40%;
     height: 1px;
-    margin: 20px auto;
+    margin: 0px auto 4% auto;
 }
 
 /* Fin Menu */
@@ -116,7 +123,7 @@ nav.round_menu {
 }
 
 #bio h2 {
-    padding: 40px 0;
+    padding-bottom: 40px;
     font-size: 30px;
     text-align: center;
 }

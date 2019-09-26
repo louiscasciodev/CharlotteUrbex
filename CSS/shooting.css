@@ -1,6 +1,6 @@
 
 
-@import "bourbon";
+/* @import "bourbon";
 * {
     margin: auto;
     padding: 0;
@@ -15,6 +15,19 @@
     -moz-transition-property: all;
     -moz-transition-duration: .2s;
     -moz-transition-timing-function: cubic-bezier(100, 50, 21, 6);
+} */
+
+
+/*-------------------CSS reset & Formatage-------------------*/
+
+
+* {margin: 0; padding: 0; overflow-x: hidden;}
+::-webkit-scrollbar {display: none;}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #525252;
+    font-size: 1em;
 }
 
 .header {
@@ -79,7 +92,7 @@ nav.round_menu {
     background-color: black;
     width: 40%;
     height: 1px;
-    margin: 20px auto;
+    margin: 0px auto 4% auto;
 }
 
 /* Fin Menu */
@@ -112,13 +125,8 @@ nav.round_menu {
     justify-content: center;
     text-align: center;
     text-decoration: none;
-    padding: 5%;
+    margin-bottom: 4%;
 }
-
-#mdr {
-    padding: 5%;
-}
-
 p {
     padding: 15%;
 }
@@ -132,22 +140,25 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5%;
+    padding-bottom: 2%;
     text-align: center;
 }
 
 .container ul {
     display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+
 }
 
 .container li {
     display: table-cell;
+}
+
+#button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+
 }
 
 .btn {
@@ -191,26 +202,27 @@ p {
     letter-spacing: 1px;
     font-weight: bold;
 }
+/*-------------------Footer social networks-------------------*/
 
-footer {
+footer{
     height: 32px;
-    padding: 10 0 10 0;
+    padding: 10px 0px 10px 0px;
 }
 
-footer ul {
+footer ul{
     display: flex;
     justify-content: center;
     align-items: stretch;
-    margin: 0 0 0 0;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/noise-bg.png) repeat 0 0;
+    margin: 0;
 }
 
-footer ul li {
+footer ul li{
     list-style-type: none;
-    margin-right: 8%;
+    margin-right: 4%;
+    margin-left: 4%;
 }
 
-footer ul li a {
+footer ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,25 +232,11 @@ footer ul li a {
     text-decoration: none;
 }
 
-.twitter {
-    background-image: url("../images/twitter.png");
-}
-
-.instagram {
-    background-image: url("../images/instagram.png");
-}
-
-.facebook {
-    background-image: url("../images/facebook.png");
-}
-
-.behance {
-    background-image: url("../images/behance.png");
-}
-
-.contact {
-    width: auto;
-}
+.twitter{background-image: url("../images/twitter.png");}
+.instagram{background-image: url("../images/instagram.png");}
+.facebook{background-image: url("../images/facebook.png");}
+.behance{background-image: url("../images/behance.png");}
+.contact{width: auto;}
 
 /* Desktop Styles */
 

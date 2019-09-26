@@ -1,8 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*-------------------CSS reset & Formatage-------------------*/
+
+
+* {margin: 0; padding: 0; overflow-x: hidden;}
+::-webkit-scrollbar {display: none;}
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -62,7 +62,7 @@ nav.round_menu {
     background-color: black;
     width: 40%;
     height: 1px;
-    margin: 20px auto;
+    margin: 0px auto 4% auto;
 }
 
 /* Fin Menu */
@@ -71,7 +71,6 @@ nav.round_menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 3vw 0%;
 }
 
 #gallery article {
@@ -117,20 +116,20 @@ nav.round_menu {
 
 footer {
     height: 32px;
-    padding: 8 0 8 0;
+    padding: 10px 0px 10px 0px;
 }
 
 footer ul {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    margin: 0 0 0 0;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/noise-bg.png) repeat 0 0;
+    margin: 0;
 }
 
 footer ul li {
     list-style-type: none;
-    margin-right: 8%;
+    margin-right: 4%;
+    margin-left: 4%;
 }
 
 footer ul li a {
