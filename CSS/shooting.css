@@ -1,3 +1,5 @@
+
+
 @import "bourbon";
 * {
     margin: auto;
@@ -9,12 +11,12 @@
     font-family: 'Quicksand', sans-serif;
     -webkit-transition-property: all;
     -webkit-transition-duration: .2s;
-  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+    -moz-transition-timing-function: cubic-bezier(100, 50, 21, 6);
     -moz-transition-property: all;
     -moz-transition-duration: .2s;
-  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+    -moz-transition-timing-function: cubic-bezier(100, 50, 21, 6);
 }
-/* Menu */
+
 .header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://live.staticflickr.com/3765/12051156634_2d2e5a4768_b.jpg') fixed;
     background-repeat: no-repeat;
@@ -23,73 +25,87 @@
     height: 250px;
     display: flex;
     justify-content: center;
- }
- /* Menu */
- nav.round_menu {
-    margin: 4% 0%;
-    display: flex ;
-    flex-flow: row wrap ;
+}
+
+/* Menu */
+
+nav.round_menu {
+    margin: 2% 0%;
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
- }
- .option{
-    border-radius: 50px;
+}
+
+.option {
+    border-radius: 100px;
     width: 100px;
     height: 100px;
     background-color: white;
-    border:none;
-    transition-duration: 0.5s ;
-    border: 2px solid rgb(63, 63, 63) ;
+    border: none;
+    transition-duration: 0.5s;
+    border: 2px solid rgb(63, 63, 63);
     cursor: pointer;
- }
- .option:hover a {
-    color: white ;
- }
- .option a{
-    text-decoration:none;
-    color: rgb(63, 63, 63) ;
-    font-size: 120% ;
+}
+
+.option:hover a {
+    color: white;
+}
+
+.option a {
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    font-size: 1.2em;
     font-family: 'Quicksand', sans-serif;
-    font-weight: bold ;
- }
- /* Hover part */
- #portfolioImg:hover {
-    background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/portfolio.jpg") no-repeat 50% 50% ;
- }
- #aboutMeImg:hover {
-    background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/aboutme.jpg") no-repeat 50% 50% ;
- }
- #eventsImg:hover {
-    background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/events.jpg") no-repeat 50% 50% ;
- }
- /* Hover part - end */
- .trait{
-    background-color:black;
+    font-weight: bold;
+}
+
+/* Hover part */
+
+#portfolioImg:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/portfolio.jpg") no-repeat 50% 50%;
+}
+
+#aboutMeImg:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/aboutme.jpg") no-repeat 50% 50%;
+}
+
+#eventsImg:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/events.jpg") no-repeat 50% 50%;
+}
+
+/* Hover part - end */
+
+.trait {
+    background-color: black;
     width: 40%;
     height: 1px;
     margin: 20px auto;
- }
+}
+
 /* Fin Menu */
+
 .home {
     height: 64px;
     width: 64px;
-    background-image: url("images/home2.png");
+    background-image: url("/images/home2.png");
     position: absolute;
     top: 2%;
     left: 2%;
 }
+
 .home a {
     height: 64px;
     width: 64px;
     display: flex;
-    
 }
+
 .portfoliotitle {
-    font-size : 40px;
+    font-size: 40px;
     font-family: 'Quicksand', sans-serif;
     color: white;
     margin: auto;
-    text-shadow: white 1px 1px,white -1px 1px,white -1px -1px, white 1px -1px;
 }
+
 .buttons {
     flex-direction: column;
     height: auto;
@@ -98,16 +114,20 @@
     text-decoration: none;
     padding: 5%;
 }
-#mdr{
+
+#mdr {
     padding: 5%;
 }
-p{
+
+p {
     padding: 15%;
 }
-.container{
+
+.container {
     text-align: justify;
 }
-.titre { 
+
+.titre {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -115,7 +135,8 @@ p{
     padding: 5%;
     text-align: center;
 }
-.container ul{
+
+.container ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -124,9 +145,11 @@ p{
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
-.container li{
+
+.container li {
     display: table-cell;
 }
+
 .btn {
     position: relative;
     display: block;
@@ -139,46 +162,55 @@ p{
     color: black;
     cursor: pointer;
     overflow: hidden;
-    text-decoration: none ;
-  }
-  .btn svg {
+    text-decoration: none;
+}
+
+.btn svg {
     position: absolute;
-    top: 0; left: 0;
-  }
-  .btn svg rect {
+    top: 0;
+    left: 0;
+}
+
+.btn svg rect {
     fill: none;
     stroke: black;
     stroke-width: 1;
     stroke-dasharray: 422, 0;
     transition: all 500ms ease-out;
-  }
-  .btn:hover svg rect {
+}
+
+.btn:hover svg rect {
     stroke-width: 5;
     stroke-dasharray: 10, 310;
     stroke-dashoffset: 33;
-  }
-  .btn:hover {
-    color:black;
-    font-size:18px;
-    letter-spacing:1px;
-    font-weight:bold;
-  }
-footer{
+}
+
+.btn:hover {
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+footer {
     height: 32px;
     padding: 10 0 10 0;
 }
-footer ul{
+
+footer ul {
     display: flex;
     justify-content: center;
     align-items: stretch;
     margin: 0 0 0 0;
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/noise-bg.png) repeat 0 0;
 }
-footer ul li{
+
+footer ul li {
     list-style-type: none;
     margin-right: 8%;
 }
-footer ul li a{
+
+footer ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,21 +219,37 @@ footer ul li a{
     color: #525252;
     text-decoration: none;
 }
-.twitter{background-image: url("../images/twitter.png");}
-.instagram{background-image: url("../images/instagram.png");}
-.facebook{background-image: url("../images/facebook.png");}
-.behance{background-image: url("../images/behance.png");}
-.contact{width: auto;}
+
+.twitter {
+    background-image: url("../images/twitter.png");
+}
+
+.instagram {
+    background-image: url("../images/instagram.png");
+}
+
+.facebook {
+    background-image: url("../images/facebook.png");
+}
+
+.behance {
+    background-image: url("../images/behance.png");
+}
+
+.contact {
+    width: auto;
+}
+
 /* Desktop Styles */
+
 @media only screen and (min-width: 961px) {
     .header {
         height: 450px;
     }
     .portfoliotitle {
-        font-size : 120px;
+        font-size: 120px;
         font-family: 'Quicksand', sans-serif;
         color: white;
         margin: auto;
     }
-    
 }
