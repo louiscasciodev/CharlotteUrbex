@@ -119,22 +119,30 @@ nav.round_menu {
 
 /* Fin menu */
 
+
+
 .EventContainer {
     display: flex;
     flex-flow: row wrap;
     margin: auto;
     width: 94%;
+    text-align: justify;
 }
 
 .EventTexte {
     display: block;
-    width: 50%;
-    background-color: rgb(26, 184, 26);
+    width: 40%;
+    margin: 5%;
 }
 
+
 .EventTexte p {
-    margin: 5%;
+  
     font-size: 110%;
+}
+
+h2 {
+    margin-bottom : 3%;
 }
 
 
