@@ -1,8 +1,14 @@
 /*-------------------CSS reset & Formatage-------------------*/
 
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
-* {margin: 0; padding: 0; overflow-x: hidden;}
-::-webkit-scrollbar {display: none;}
+::-webkit-scrollbar {
+    display: none;
+}
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -80,6 +86,37 @@ nav.round_menu {
     height: 300px;
     width: 350px;
     margin: 2px;
+}
+
+#gallery article:hover .overlay {
+    height: 30%;
+}
+
+.photo {
+    position: relative;
+    width: 50%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.text {
+    color: white;
+    opacity: 0.9;
+    font-size: 0.9em;
+    position: absolute;
+    overflow: hidden;
+    padding: 20px;
+    text-align: justify;
 }
 
 .header {
@@ -162,7 +199,11 @@ footer ul li a {
     width: auto;
 }
 
-/* Desktop Styles */
+@media only screen and (max-width: 450px) {
+    .text {
+        font-size: 0.8em;
+    }
+}
 
 @media only screen and (min-width: 961px) {
     .header {

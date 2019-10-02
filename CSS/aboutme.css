@@ -228,10 +228,6 @@ button:hover:not(.option) {
 }
 
 .button_lang {
-    background-color: #444;
-    color: #FFF;
-    padding: 8px 20px;
-    border-radius: 5px;
     -webkit-transition: background-color .3s ease-in-out;
     -moz-transition: background-color .3s ease-in-out;
     -o-transition: background-color .3s ease-in-out;
@@ -240,7 +236,6 @@ button:hover:not(.option) {
 }
 
 .button_lang:hover, .current_lang {
-    background-color: #777;
     -webkit-transition: background-color .3s ease-in-out;
     -moz-transition: background-color .3s ease-in-out;
     -o-transition: background-color .3s ease-in-out;
@@ -248,7 +243,30 @@ button:hover:not(.option) {
     transition: background-color .3s ease-in-out;
 }
 
-ul li {
-    width: auto;
-    display: inline;
+#fr_click{
+    width: 30px;
+    height: 20px;
+    margin-bottom: 5px;
+    background-image: url("../images/france.png");
+    background-position: center;
+    background-size: cover;
+ }
+
+#en_click{
+    width: 30px;
+    height: 20px;
+    background-image: url("../images/uk.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#trad{
+    position: absolute;
+    top: 5%;
+    right: 1%;
+}
+
+#trad ul li {
+    display: block;
+    float: left;
 }
