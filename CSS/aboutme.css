@@ -141,8 +141,62 @@ hr {
     border: 1px solid black;
 }
 
+/*-------------------------------------*/
+
+footer {
+    height: 32px;
+    padding: 0px 0px 0px 0px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+footer ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #525252;
+    text-decoration: none;
+}
+
+.twitter {
+    background-image: url("../images/twitter.png");
+}
+
+.instagram {
+    background-image: url("../images/instagram.png");
+}
+
+.facebook {
+    background-image: url("../images/facebook.png");
+}
+
+.behance {
+    background-image: url("../images/behance.png");
+}
+
+.contact {
+    width: auto;
+}
+
+/*-------------------------------------*/
+
+
 #formulaire {
     padding: 0% 5%;
+    padding-top: 40px;
 }
 
 #formulaire h2 {
@@ -173,13 +227,13 @@ input, textarea {
 }
 
 #email {
-    width: 100%;
+    width: 94%;
     height: 20px;
     margin: 2px 0 0 0;
 }
 
 #message {
-    width: 100%;
+    width: 94%;
     height: 100px;
     margin: 2px 0 0 0;
 }
@@ -187,13 +241,33 @@ input, textarea {
 label {
     font-size: 20px;
     float: left;
+    padding-left: 3%;
 }
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(49, 43, 43, 0.801);
+    display: none;
+  }
+  .modal-inner {
+    margin-top: 30px;
+  }
+
+
+
+
 
 #bouton {
     padding: 20px 0 40px 0;
 }
 
-#send {
+/*#send {
     background-color: #fff;
     color: black;
     font-weight: bold;
@@ -202,7 +276,54 @@ label {
     font-size: 15px;
     padding: 3px 0;
     font-family: 'Quicksand', sans-serif;
-}
+}*/
+
+.effectSend {
+    border-radius: 2px;
+    background-color: #313131;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .effectSend span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .effectSend span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .effectSend:hover span {
+    padding-right: 25px;
+  }
+  
+  .effectSend:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+
+
+
+
 
 button:hover:not(.option) {
     background-color: #313131;
