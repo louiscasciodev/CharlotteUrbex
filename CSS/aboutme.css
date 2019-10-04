@@ -361,12 +361,17 @@ button:hover:not(.option) {
     display: none;
 }
 
+.button_lang:not(.current_lang) {
+    display: none ;
+}
+
 .button_lang {
     -webkit-transition: background-color .3s ease-in-out;
     -moz-transition: background-color .3s ease-in-out;
     -o-transition: background-color .3s ease-in-out;
     -ms-transition: background-color .3s ease-in-out;
     transition: background-color .3s ease-in-out;
+    color: transparent ;
 }
 
 .button_lang:hover, .current_lang {
@@ -375,6 +380,7 @@ button:hover:not(.option) {
     -o-transition: background-color .3s ease-in-out;
     -ms-transition: background-color .3s ease-in-out;
     transition: background-color .3s ease-in-out;
+    cursor: pointer;
 }
 
 #fr_click{

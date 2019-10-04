@@ -175,6 +175,7 @@ nav.round_menu {
 .btn {
     position: relative;
     display: block;
+    margin: auto;
     width: 166px;
     height: 45px;
     font-size: 12px;
@@ -277,4 +278,59 @@ footer ul li a{
         height:250px;
         padding: 5%;
     }
+}
+
+/* Traduction */
+#en {
+    display: none;
+}
+
+.button_lang:not(.current_lang) {
+    display: none ;
+}
+
+.button_lang {
+    -webkit-transition: background-color .3s ease-in-out;
+    -moz-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    -ms-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+    color: transparent ;
+}
+
+.button_lang:hover, .current_lang {
+    -webkit-transition: background-color .3s ease-in-out;
+    -moz-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    -ms-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+}
+
+#fr_click{
+    width: 30px;
+    height: 20px;
+    margin-bottom: 5px;
+    background-image: url("../images/france.png");
+    background-position: center;
+    background-size: cover;
+ }
+
+#en_click{
+    width: 30px;
+    height: 20px;
+    background-image: url("../images/uk.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#trad{
+    position: absolute;
+    top: 5%;
+    right: 1%;
+}
+
+#trad ul li {
+    display: block;
+    float: left;
 }
