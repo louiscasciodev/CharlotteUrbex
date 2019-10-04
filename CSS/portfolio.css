@@ -123,7 +123,7 @@ nav.round_menu {
 }
 
 #gallery article:hover .overlay {
-    height: 30%;
+    height: 15%;
 }
 
 
@@ -145,8 +145,8 @@ nav.round_menu {
     font-size: 0.9em;
     position: absolute;
     overflow: hidden;
-    padding: 20px;
-    text-align: justify;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
 }
 
 .header {
