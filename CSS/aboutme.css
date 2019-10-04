@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    color: #525252;
+    color: rgb(63, 63, 63);
     font-size: 1em;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
-    color: #525252;
+    color: rgb(63, 63, 63);
     font-size: 1em;
 }
 
@@ -138,11 +138,66 @@ nav.round_menu {
 }
 
 hr {
-    border: 1px solid black;
+    border: 1px solid;
+    border-color: rgb(63, 63, 63);
 }
+
+/*-------------------------------------*/
+
+footer {
+    height: 32px;
+    padding: 0px 0px 0px 0px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+footer ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: rgb(63, 63, 63);
+    text-decoration: none;
+}
+
+.twitter {
+    background-image: url("../images/twitter.png");
+}
+
+.instagram {
+    background-image: url("../images/instagram.png");
+}
+
+.facebook {
+    background-image: url("../images/facebook.png");
+}
+
+.behance {
+    background-image: url("../images/behance.png");
+}
+
+.contact {
+    width: auto;
+}
+
+/*-------------------------------------*/
+
 
 #formulaire {
     padding: 0% 5%;
+    padding-top: 40px;
 }
 
 #formulaire h2 {
@@ -164,22 +219,22 @@ form div {
 }
 
 input, textarea {
-    border-color: black;
-    border-radius: 2px;
+    border-color: rgb(63, 63, 63);
+    border-radius: 3px;
     border-width: 1px;
-    color: black;
+    color: rgb(63, 63, 63);
     font-family: 'Quicksand', sans-serif;
     padding: 2px 2px;
 }
 
 #email {
-    width: 100%;
+    width: 94%;
     height: 20px;
     margin: 2px 0 0 0;
 }
 
 #message {
-    width: 100%;
+    width: 94%;
     height: 100px;
     margin: 2px 0 0 0;
 }
@@ -187,13 +242,45 @@ input, textarea {
 label {
     font-size: 20px;
     float: left;
+    padding-left: 3%;
 }
+
+
+
+.modal {
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    right: 15%;
+    height: 40%;
+    background-color: rgba(63, 63, 63, 0.884);
+    opacity: 0,8;
+    color: white;
+    padding-bottom: 0px;
+    display: none;
+    border-radius: 3px;
+}
+
+#modal h2 {
+    padding: 4% 0;
+}
+#modal button {
+    margin-top: 10%;
+    background-color: white;
+    color: rgb(63, 63, 63);
+    width: 20%;
+    height: 30px;
+    border-radius: 3px;
+}
+
+
+
 
 #bouton {
     padding: 20px 0 40px 0;
 }
 
-#send {
+/*#send {
     background-color: #fff;
     color: black;
     font-weight: bold;
@@ -202,10 +289,57 @@ label {
     font-size: 15px;
     padding: 3px 0;
     font-family: 'Quicksand', sans-serif;
-}
+}*/
+
+.effectSend {
+    border-radius: 2px;
+    background-color: rgb(63, 63, 63);
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .effectSend span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .effectSend span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .effectSend:hover span {
+    padding-right: 25px;
+  }
+  
+  .effectSend:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+
+
+
+
 
 button:hover:not(.option) {
-    background-color: #313131;
+    background-color:rgb(63, 63, 63);
     color: white;
 }
 
@@ -227,28 +361,52 @@ button:hover:not(.option) {
     display: none;
 }
 
+.button_lang:not(.current_lang) {
+    display: none ;
+}
+
 .button_lang {
-    background-color: #444;
-    color: #FFF;
-    padding: 8px 20px;
-    border-radius: 5px;
     -webkit-transition: background-color .3s ease-in-out;
     -moz-transition: background-color .3s ease-in-out;
     -o-transition: background-color .3s ease-in-out;
     -ms-transition: background-color .3s ease-in-out;
     transition: background-color .3s ease-in-out;
+    color: transparent ;
 }
 
 .button_lang:hover, .current_lang {
-    background-color: #777;
     -webkit-transition: background-color .3s ease-in-out;
     -moz-transition: background-color .3s ease-in-out;
     -o-transition: background-color .3s ease-in-out;
     -ms-transition: background-color .3s ease-in-out;
     transition: background-color .3s ease-in-out;
+    cursor: pointer;
 }
 
-ul li {
-    width: auto;
-    display: inline;
+#fr_click{
+    width: 30px;
+    height: 20px;
+    margin-bottom: 5px;
+    background-image: url("../images/france.png");
+    background-position: center;
+    background-size: cover;
+ }
+
+#en_click{
+    width: 30px;
+    height: 20px;
+    background-image: url("../images/uk.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#trad{
+    position: absolute;
+    top: 5%;
+    right: 1%;
+}
+
+#trad ul li {
+    display: block;
+    float: left;
 }

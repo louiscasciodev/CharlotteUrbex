@@ -23,9 +23,12 @@
 
     <!--NavBar-->
     <nav class="round_menu">
-        <button class="option" id="portfolioImg" onclick="Javascript:document.location = 'portfolio.html'"><a href="portfolio.html" title="Portfolio">Portfolio</a></button>
-        <button class="option" id="aboutMeImg" onclick="Javascript:document.location = 'aboutme.html'"><a href="aboutme.html" title="About Me">About me</a></button>
-        <button class="option" id="eventsImg" onclick="Javascript:document.location = 'events.html'"><a href="events.html" title="Events">Events</a></button>
+        <button class="option" id="portfolioImg" onclick="Javascript:document.location = 'portfolio.html'"><a
+                href="portfolio.html" title="Portfolio">Portfolio</a></button>
+        <button class="option" id="aboutMeImg" onclick="Javascript:document.location = 'aboutme.html'"><a
+                href="aboutme.html" title="About Me">About me</a></button>
+        <button class="option" id="eventsImg" onclick="Javascript:document.location = 'events.html'"><a
+                href="events.html" title="Events">Events</a></button>
     </nav>
     <!--NavBar-->
 
@@ -34,17 +37,31 @@
     <!--Trait qui sépare-->
     <div id="mdr" class="buttons">
         <div class="container">
-            <div class="textshooting">
-                    <p>  Personnalisez votre séance photo comme vous l'entendez : le nombre de personnes, la durée, le maquillage et la coiffure. Je vous propose des shooting photo professionnels dans des lieux Urbex, en solo, duo ou groupes. Réservez-vite votre séance !</p>
+            <div class="textshooting tradfr">
+                <p> Personnalisez votre séance photo comme vous l'entendez : le nombre de personnes, la durée, le
+                    maquillage et la coiffure. Je vous propose des shooting photo professionnels dans des lieux Urbex,
+                    en solo, duo ou groupes. Réservez-vite votre séance !</p>
+            </div>
+            <div class="textshooting traden">
+                <p> Custom your photo shooting as you wish : people's count, duration, make up and hairstyle. I'm
+                    offering you professionals shooting in differents Urbex places, solo or duo or groups. Book your session quickly !</p>
             </div>
             <div class="imgshooting"></div>
         </div>
-        <div id="button">
-        <a href="#" class="btn">
-            <svg>
-                <rect x="0" y="0" fill="none" width="166" height="45">
-            </svg>Réserver
-        </a>
+        <div id="button" class="tradfr">
+            <a href="#" class="btn">
+                <svg>
+                    <rect x="0" y="0" fill="none" width="166" height="45">
+                </svg>Réserver !
+            </a>
+        </div>
+        
+        <div id="button" class="traden">
+            <a href="#" class="btn">
+                <svg>
+                    <rect x="0" y="0" fill="none" width="166" height="45">
+                </svg>Book it !
+            </a>
         </div>
     </div>
     <footer>
@@ -56,6 +73,14 @@
             <li><a class="contact" href="aboutme.html" title="About CharlotteUrbex">Contact</a></li>
         </ul>
     </footer>
+
+    <div id="trad">
+        <ul>
+            <li id="fr_click" class="button_lang current_lang">Fr</li>
+            <li id="en_click" class="button_lang">En</li>
+        </ul>
+    </div>
+    <script src="trad.js"></script>
 </body>
 
 </html>
