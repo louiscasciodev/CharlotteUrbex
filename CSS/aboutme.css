@@ -338,7 +338,7 @@ label {
 
 
 
-button:hover:not(.option) {
+button:hover:not(.option) {.mo
     background-color:rgb(63, 63, 63);
     color: white;
 }
