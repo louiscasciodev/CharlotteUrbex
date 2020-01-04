@@ -3,7 +3,6 @@
 ![charlotte](charlotte-urbex.jpg) 
 
 **Projet 1 : Charlotte Urbex**
-
 *(Septembre  2019)*
 
 Projet fictif (en groupe) pour une photographe
