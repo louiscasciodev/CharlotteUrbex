@@ -1,3 +1,3 @@
 # CharlotteUrbex
 
-![charlotte](https://imgur.com/AqhPUTp)
+![charlotte](https://imgur.com/AqhPUTp.jpg)
