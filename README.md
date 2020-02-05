@@ -1,7 +1,5 @@
 # CharlotteUrbex
 
-![charlotte](charlotte-urbex.jpg) 
-
 **Projet 1 : Charlotte Urbex**
 *(Septembre  2019)*
 
